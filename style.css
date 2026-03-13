@@ -12,6 +12,8 @@
   --text: #e8e8e8;
   --muted: #888;
   --border: #2a2a2a;
+  --font: 'Aptos', 'Aptos Display', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Aptos Display', 'Aptos', 'Segoe UI', system-ui, sans-serif;
 }
 
 html {
@@ -21,7 +23,7 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Georgia', serif;
+  font-family: var(--font);
   line-height: 1.7;
 }
 
@@ -61,7 +63,7 @@ nav ul {
 nav ul a {
   color: var(--muted);
   text-decoration: none;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -93,7 +95,7 @@ nav ul a:hover {
   color: var(--muted);
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
 }
 
 /* BUTTON */
@@ -103,7 +105,7 @@ nav ul a:hover {
   border: 1px solid var(--accent);
   color: var(--accent);
   text-decoration: none;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -130,6 +132,10 @@ section:nth-child(even) {
   margin: 0 auto;
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
@@ -147,7 +153,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--muted);
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.5rem;
@@ -173,13 +179,13 @@ h2 {
 .date {
   font-size: 0.85rem;
   color: var(--muted);
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
 }
 
 .company {
   display: block;
   color: var(--accent);
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   font-size: 0.9rem;
   margin: 0.25rem 0 0.5rem;
 }
@@ -210,7 +216,7 @@ h2 {
   background: var(--surface2);
   border: 1px solid var(--border);
   padding: 0.4rem 1rem;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   font-size: 0.85rem;
   color: var(--text);
 }
@@ -236,7 +242,7 @@ h2 {
 .blog-date {
   font-size: 0.8rem;
   color: var(--muted);
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -255,7 +261,7 @@ h2 {
 .blog-link {
   color: var(--accent);
   text-decoration: none;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   font-size: 0.85rem;
 }
 
@@ -280,7 +286,7 @@ h2 {
 footer {
   text-align: center;
   padding: 2rem;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font);
   font-size: 0.8rem;
   color: var(--muted);
   border-top: 1px solid var(--border);
