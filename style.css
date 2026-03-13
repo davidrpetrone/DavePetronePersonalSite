@@ -143,6 +143,30 @@ h2 {
   letter-spacing: 0.05em;
 }
 
+/* ABOUT */
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.headshot {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /* RESUME */
 .resume-block {
   margin-bottom: 3rem;
